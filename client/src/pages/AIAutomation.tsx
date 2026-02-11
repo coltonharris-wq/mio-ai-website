@@ -47,9 +47,11 @@ export default function AIAutomation() {
           </Link>
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-4 bg-primary/10 rounded-lg">
-                  <Zap className="w-12 h-12 text-primary" />
+              <div className="mb-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-4 bg-primary/10 rounded-lg">
+                    <Zap className="w-12 h-12 text-primary" />
+                  </div>
                 </div>
                 <h1 className="text-5xl md:text-6xl font-black" style={{ fontFamily: 'var(--font-display)' }}>
                   AI Automation

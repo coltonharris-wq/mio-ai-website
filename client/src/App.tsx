@@ -8,6 +8,14 @@ import Home from "./pages/Home";
 import AIReceptionist from "./pages/AIReceptionist";
 import AIAutomation from "./pages/AIAutomation";
 import LeadGeneration from "./pages/LeadGeneration";
+import Healthcare from "./pages/industries/Healthcare";
+import Finance from "./pages/industries/Finance";
+import RealEstate from "./pages/industries/RealEstate";
+import Manufacturing from "./pages/industries/Manufacturing";
+import Ecommerce from "./pages/industries/Ecommerce";
+import Technology from "./pages/industries/Technology";
+import ProfessionalServices from "./pages/industries/ProfessionalServices";
+import Construction from "./pages/industries/Construction";
 
 
 function Router() {
@@ -17,6 +25,14 @@ function Router() {
       <Route path={"/ai-receptionist"} component={AIReceptionist} />
       <Route path={"/ai-automation"} component={AIAutomation} />
       <Route path={"/lead-generation"} component={LeadGeneration} />
+      <Route path={"/industries/healthcare"} component={Healthcare} />
+      <Route path={"/industries/finance"} component={Finance} />
+      <Route path={"/industries/real-estate"} component={RealEstate} />
+      <Route path={"/industries/manufacturing"} component={Manufacturing} />
+      <Route path={"/industries/ecommerce"} component={Ecommerce} />
+      <Route path={"/industries/technology"} component={Technology} />
+      <Route path={"/industries/professional-services"} component={ProfessionalServices} />
+      <Route path={"/industries/construction"} component={Construction} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

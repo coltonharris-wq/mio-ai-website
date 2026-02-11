@@ -229,20 +229,23 @@ export default function LeadGeneration() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {[
-              "B2B SaaS",
-              "Professional Services",
-              "Healthcare",
-              "Financial Services",
-              "Real Estate",
-              "Manufacturing",
-              "E-commerce",
-              "Technology"
+              { name: "Healthcare", path: "/industries/healthcare" },
+              { name: "Finance", path: "/industries/finance" },
+              { name: "Real Estate", path: "/industries/real-estate" },
+              { name: "Manufacturing", path: "/industries/manufacturing" },
+              { name: "E-commerce", path: "/industries/ecommerce" },
+              { name: "Technology", path: "/industries/technology" },
+              { name: "Professional Services", path: "/industries/professional-services" },
+              { name: "Construction", path: "/industries/construction" }
             ].map((industry, i) => (
-              <Card key={i} className="brutalist-border bg-background p-6 text-center hover:brutalist-shadow transition-all hover:-translate-y-1">
-                <h3 className="text-xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
-                  {industry}
-                </h3>
-              </Card>
+              <Link key={i} href={industry.path}>
+                <Card className="brutalist-border bg-background p-6 text-center hover:brutalist-shadow transition-all hover:-translate-y-1 cursor-pointer group">
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+                    {industry.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-2">Learn More →</p>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

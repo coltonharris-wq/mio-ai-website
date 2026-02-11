@@ -176,7 +176,7 @@ export default function Home() {
                 { name: "Farm Bureau", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/jtzkzkcJwutLealS.png" }
               ].map((company, i) => (
                 <div key={i} className="flex items-center justify-center mx-12 flex-shrink-0">
-                  <img src={company.logo} alt={company.name} className="h-16 w-auto opacity-40 grayscale hover:opacity-60 hover:grayscale-0 transition-all" />
+                  <img src={company.logo} alt={company.name} className="h-16 w-auto opacity-90 hover:opacity-100 hover:scale-110 transition-all" />
                 </div>
               ))}
             </div>
