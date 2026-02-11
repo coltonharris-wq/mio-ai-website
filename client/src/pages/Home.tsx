@@ -447,7 +447,7 @@ export default function Home() {
               { icon: Clock, title: "Professional Services", desc: "Intelligent scheduling, client intake, and project management automation.", path: "/industries/professional-services" },
               { icon: MessageSquare, title: "E-commerce", desc: "24/7 customer support, order tracking, and personalized shopping assistance.", path: "/industries/ecommerce" }
             ].map((industry, i) => (
-              <Link key={i} href={industry.path}>
+              <Link key={i} href={industry.path} onClick={() => window.scrollTo(0, 0)}>
                 <Card className="brutalist-border bg-background p-6 hover:brutalist-shadow transition-all hover:-translate-y-1 cursor-pointer group">
                   <industry.icon className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
