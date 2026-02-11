@@ -66,7 +66,7 @@ export default function AIAutomation() {
             </div>
             <div>
               <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/qUVbvV04rK95xby9RBjxu6/sandbox/i7U83rsZX0DxE07z7xAcAZ-img-3_1770846523000_na1fn_YXV0b21hdGlvbi1hZ2VudHMtdmlzdWFs.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVVWYnZWMDRySzk1eGJ5OVJCanh1Ni9zYW5kYm94L2k3VTgzcnNaWDBEeEUwN3o3eEFjQVotaW1nLTNfMTc3MDg0NjUyMzAwMF9uYTFmbl9ZWFYwYjIxaGRHbHZiaTFoWjJWdWRITXRkbWx6ZFdGcy5wbmc/eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=q8vLHeJUfwouNCD9GNZiRjPRtc4W~suw-aRxiBz99Cz8WEmIOUU6I6irZVeijxfFGpRNszcbw~nV4jsSimtXC0e-jenYXUyrVgcu-yO5WCpfwIkey9KADCjwZVPakrd~VNlnm4bWnwnkwVLMJjyFSxFjabdQDszaiqN18ORBmc-IFFNu3OjpAZjlUuc2enF1TF3VbQ4EhlUGZGYfkYHjFAB08K9NPu3rNAVyhjaeqo1pGYAEjc1WRGd~QnZQ1KbYUEC18qop3TpnLj97QTO9Ms~yvDCHcGDseGP-7Lyt6n8tpgBCikjOwFR9kcSQ2xGLTl0d4RC4fC7Hw~6boQzUg__"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/RMxulttYyuuWQgJh.png"
                 alt="AI Automation"
                 className="brutalist-border brutalist-shadow-lg w-full rounded-lg"
               />
