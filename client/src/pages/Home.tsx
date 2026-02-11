@@ -99,28 +99,49 @@ export default function Home() {
       </section>
 
       {/* Trusted By Section */}
-      <section className="py-16 bg-background border-y-4 border-foreground">
+      <section className="py-16 bg-background border-y-4 border-foreground overflow-hidden">
         <div className="container">
           <h2 className="text-center text-2xl font-bold mb-12 tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Trusted by hundreds of leading brands
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
-            {[
-              { name: "TechCorp", width: "120px" },
-              { name: "DataFlow", width: "140px" },
-              { name: "CloudSync", width: "130px" },
-              { name: "AI Systems", width: "125px" },
-              { name: "NextGen", width: "135px" },
-              { name: "InnovateLabs", width: "145px" },
-              { name: "FutureWorks", width: "128px" },
-              { name: "SmartOps", width: "132px" }
-            ].map((company, i) => (
-              <div key={i} className="flex items-center justify-center">
-                <div className="text-2xl font-bold text-foreground/40" style={{ fontFamily: 'var(--font-display)' }}>
-                  {company.name}
+          <div className="relative">
+            <style>{`
+              @keyframes scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+              }
+              .logo-scroll {
+                animation: scroll 30s linear infinite;
+              }
+              .logo-scroll:hover {
+                animation-play-state: paused;
+              }
+            `}</style>
+            <div className="flex logo-scroll">
+              {[
+                { name: "TechCorp", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
+                { name: "DataFlow", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
+                { name: "CloudSync", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/ECrGzHIMZslDaAqa.png" },
+                { name: "AI Systems", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
+                { name: "NextGen", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
+                { name: "InnovateLabs", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/ECrGzHIMZslDaAqa.png" },
+                { name: "FutureWorks", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
+                { name: "SmartOps", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
+                // Duplicate for seamless loop
+                { name: "TechCorp", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
+                { name: "DataFlow", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
+                { name: "CloudSync", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/ECrGzHIMZslDaAqa.png" },
+                { name: "AI Systems", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
+                { name: "NextGen", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
+                { name: "InnovateLabs", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/ECrGzHIMZslDaAqa.png" },
+                { name: "FutureWorks", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
+                { name: "SmartOps", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" }
+              ].map((company, i) => (
+                <div key={i} className="flex items-center justify-center mx-12 flex-shrink-0">
+                  <img src={company.logo} alt={company.name} className="h-16 w-auto opacity-40 grayscale hover:opacity-60 hover:grayscale-0 transition-all" />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -218,8 +239,8 @@ export default function Home() {
                     <span>Seamless calendar integration and appointment booking</span>
                   </li>
                 </ul>
-                <Button variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
-                  Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                <Button asChild variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
+                  <a href="/ai-receptionist">Learn More <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
               </div>
               <div className="order-1 md:order-2">
@@ -235,7 +256,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="https://private-us-east-1.manuscdn.com/sessionFile/qUVbvV04rK95xby9RBjxu6/sandbox/i7U83rsZX0DxE07z7xAcAZ-img-3_1770846523000_na1fn_YXV0b21hdGlvbi1hZ2VudHMtdmlzdWFs.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVVWYnZWMDRySzk1eGJ5OVJCanh1Ni9zYW5kYm94L2k3VTgzcnNaWDBEeEUwN3o3eEFjQVotaW1nLTNfMTc3MDg0NjUyMzAwMF9uYTFmbl9ZWFYwYjIxaGRHbHZiaTFoWjJWdWRITXRkbWx6ZFdGcy5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=q8vLHeJUfwouNCD9GNZiRjPRtc4W~suw-aRxiBz99Cz8WEmIOUU6I6irZVeijxfFGpRNszcbw~nV4jsSimtXC0e-jenYXUyrVgcu-yO5WCpfwIkey9KADCjwZVPakrd~VNlnm4bWnwnkwVLMJjyFSxFjabdQDszaiqN18ORBmc-IFFNu3OjpAZjlUuc2enF1TF3VbQ4EhlUGZGYfkYHjFAB08K9NPu3rNAVyhjaeqo1pGYAEjc1WRGd~QnZQ1KbYUEC18qop3TpnLj97QTO9Ms~yvDCHcGDseGP-7Lyt6n8tpgBCikjOwFR9kcSQ2xGLTl0d4RC4fC7Hw~6boQzUg__"
+                  src="https://private-us-east-1.manuscdn.com/sessionFile/qUVbvV04rK95xby9RBjxu6/sandbox/i7U83rsZX0DxE07z7xAcAZ-img-3_1770846523000_na1fn_YXV0b21hdGlvbi1hZ2VudHMtdmlzdWFs.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVVWYnZWMDRySzk1eGJ5OVJCanh1Ni9zYW5kYm94L2k3VTgzcnNaWDBEeEUwN3o3eEFjQVotaW1nLTNfMTc3MDg0NjUyMzAwMF9uYTFmbl9ZWFYwYjIxaGRHbHZiaTFoWjJWdWRITXRkbWx6ZFdGcy5wbmc/eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=q8vLHeJUfwouNCD9GNZiRjPRtc4W~suw-aRxiBz99Cz8WEmIOUU6I6irZVeijxfFGpRNszcbw~nV4jsSimtXC0e-jenYXUyrVgcu-yO5WCpfwIkey9KADCjwZVPakrd~VNlnm4bWnwnkwVLMJjyFSxFjabdQDszaiqN18ORBmc-IFFNu3OjpAZjlUuc2enF1TF3VbQ4EhlUGZGYfkYHjFAB08K9NPu3rNAVyhjaeqo1pGYAEjc1WRGd~QnZQ1KbYUEC18qop3TpnLj97QTO9Ms~yvDCHcGDseGP-7Lyt6n8tpgBCikjOwFR9kcSQ2xGLTl0d4RC4fC7Hw~6boQzUg__"
                   alt="AI Automation Agents Visualization"
                   className="brutalist-border brutalist-shadow-lg w-full rounded-lg"
                 />
@@ -266,8 +287,8 @@ export default function Home() {
                     <span>Continuous learning and optimization</span>
                   </li>
                 </ul>
-                <Button variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
-                  Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                <Button asChild variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
+                  <a href="/ai-automation">Learn More <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
               </div>
             </div>
@@ -300,8 +321,8 @@ export default function Home() {
                     <span>Real-time analytics and performance tracking</span>
                   </li>
                 </ul>
-                <Button variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
-                  Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                <Button asChild variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
+                  <a href="/lead-generation">Learn More <ArrowRight className="ml-2 w-4 h-4" /></a>
                 </Button>
               </div>
               <div className="order-1 md:order-2">
