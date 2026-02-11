@@ -45,7 +45,7 @@ export default function AIAutomation() {
               <ArrowLeft className="mr-2 w-4 h-4" /> Back to Home
             </Button>
           </Link>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-4 bg-primary/10 rounded-lg">

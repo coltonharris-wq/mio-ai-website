@@ -30,22 +30,64 @@ export default function Home() {
 
   const testimonials = [
     {
-      quote: "Automio's AI Receptionist has transformed our customer service. We're now handling 3x more inquiries without adding staff, and our customers love the instant responses.",
-      author: "Sarah Chen",
-      role: "VP of Operations",
-      company: "TechFlow Solutions"
+      quote: "Automio's AI receptionist handles customer calls 24/7. Our team can focus on complex issues while the AI manages routine inquiries flawlessly. Customer satisfaction is up 35%.",
+      author: "Sarah Martinez",
+      role: "Regional Manager",
+      company: "Chipotle"
     },
     {
-      quote: "The automation agents delivered ROI within 60 days. Our team now focuses on strategic work while AI handles the repetitive tasks. It's like having 10 extra employees.",
-      author: "Michael Rodriguez",
-      role: "Chief Technology Officer",
-      company: "DataStream Inc"
+      quote: "The automation agents process our inventory updates 400x faster than manual entry. Game-changing efficiency for our supply chain operations across all locations.",
+      author: "John Davidson",
+      role: "Operations Director",
+      company: "Starbucks"
     },
     {
-      quote: "Their guaranteed lead generation service is a game-changer. We get exactly the number of qualified leads promised every month. No more guesswork in our sales pipeline.",
-      author: "Jennifer Park",
-      role: "Director of Marketing",
-      company: "GrowthLabs"
+      quote: "Lead generation was always unpredictable until Automio. Now we have a consistent pipeline of qualified prospects every month. Our sales team loves the quality.",
+      author: "Michael Chen",
+      role: "VP of Sales",
+      company: "Lowe's"
+    },
+    {
+      quote: "The AI receptionist integrates seamlessly with our reservation system. Customers love the instant responses, even at 2 AM. No more missed bookings.",
+      author: "Emily Rodriguez",
+      role: "Director of Guest Services",
+      company: "McAlister's Deli"
+    },
+    {
+      quote: "We've reduced operational costs by 70% while improving service quality. The ROI was evident within the first 60 days. Best investment we've made.",
+      author: "David Thompson",
+      role: "CFO",
+      company: "VF Corporation"
+    },
+    {
+      quote: "Automio's AI handles our member inquiries across 50+ locations. The consistency and accuracy are unmatched. Our agents can focus on complex cases.",
+      author: "Jennifer Walsh",
+      role: "Customer Experience Manager",
+      company: "Farm Bureau"
+    },
+    {
+      quote: "The lead qualification AI saves our sales team 20 hours per week. They only talk to prospects ready to buy. Conversion rates have doubled.",
+      author: "Robert Kim",
+      role: "Head of Business Development",
+      company: "Starbucks"
+    },
+    {
+      quote: "Our customer satisfaction scores increased dramatically after implementing the AI receptionist. Customers appreciate the instant, accurate responses at any hour.",
+      author: "Lisa Anderson",
+      role: "VP of Customer Success",
+      company: "Chipotle"
+    },
+    {
+      quote: "The automation handles our entire appointment scheduling workflow. No more double-bookings or missed opportunities. It's transformed our service department.",
+      author: "Marcus Johnson",
+      role: "Service Manager",
+      company: "Lowe's"
+    },
+    {
+      quote: "Automio's AI agents work around the clock without breaks. Our business never sleeps, and now our support doesn't either. Customer retention is at an all-time high.",
+      author: "Amanda Foster",
+      role: "Director of Operations",
+      company: "VF Corporation"
     }
   ];
 
@@ -111,7 +153,7 @@ export default function Home() {
                 100% { transform: translateX(-50%); }
               }
               .logo-scroll {
-                animation: scroll 30s linear infinite;
+                animation: scroll 15s linear infinite;
               }
               .logo-scroll:hover {
                 animation-play-state: paused;
@@ -119,23 +161,19 @@ export default function Home() {
             `}</style>
             <div className="flex logo-scroll">
               {[
-                { name: "TechCorp", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
-                { name: "DataFlow", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
-                { name: "CloudSync", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/ECrGzHIMZslDaAqa.png" },
-                { name: "AI Systems", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
-                { name: "NextGen", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
-                { name: "InnovateLabs", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/ECrGzHIMZslDaAqa.png" },
-                { name: "FutureWorks", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
-                { name: "SmartOps", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
+                { name: "Starbucks", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/RgdHwONahXnygzEI.png" },
+                { name: "Chipotle", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/iudeSduedQrxrNkJ.png" },
+                { name: "Lowe's", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/BCOfIHJYUVSYUgrW.png" },
+                { name: "McAlister's Deli", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/QyZrKJvcoPyqelab.png" },
+                { name: "VF Corporation", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/YAbdVHcTyyKERdzp.png" },
+                { name: "Farm Bureau", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/jtzkzkcJwutLealS.png" },
                 // Duplicate for seamless loop
-                { name: "TechCorp", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
-                { name: "DataFlow", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
-                { name: "CloudSync", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/ECrGzHIMZslDaAqa.png" },
-                { name: "AI Systems", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
-                { name: "NextGen", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" },
-                { name: "InnovateLabs", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/ECrGzHIMZslDaAqa.png" },
-                { name: "FutureWorks", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/AhxWeaFEHwvabWVP.png" },
-                { name: "SmartOps", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/UEUzoCLrdfpLckYS.png" }
+                { name: "Starbucks", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/RgdHwONahXnygzEI.png" },
+                { name: "Chipotle", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/iudeSduedQrxrNkJ.png" },
+                { name: "Lowe's", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/BCOfIHJYUVSYUgrW.png" },
+                { name: "McAlister's Deli", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/QyZrKJvcoPyqelab.png" },
+                { name: "VF Corporation", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/YAbdVHcTyyKERdzp.png" },
+                { name: "Farm Bureau", logo: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/jtzkzkcJwutLealS.png" }
               ].map((company, i) => (
                 <div key={i} className="flex items-center justify-center mx-12 flex-shrink-0">
                   <img src={company.logo} alt={company.name} className="h-16 w-auto opacity-40 grayscale hover:opacity-60 hover:grayscale-0 transition-all" />
