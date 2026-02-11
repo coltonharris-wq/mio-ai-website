@@ -18,7 +18,7 @@ import {
   CheckCircle2,
   MessageSquare,
   Clock,
-  Target,
+  HardHat,
   Users,
   Award,
   ChevronLeft,
@@ -440,7 +440,7 @@ export default function Home() {
             {[
               { icon: Users, title: "Healthcare", desc: "AI agents support virtual check-ins, patient consultations, and medical record management.", path: "/industries/healthcare" },
               { icon: TrendingUp, title: "Finance", desc: "Secure AI agents help customers apply for accounts and loans, check balances, and detect fraud.", path: "/industries/finance" },
-              { icon: Target, title: "Retail", desc: "AI-powered agents that help customers find products, process orders, and provide personalized recommendations.", path: "/industries/retail" },
+              { icon: HardHat, title: "Construction", desc: "AI-powered scheduling, bid management, and workforce coordination. Reduce project delays by 40%.", path: "/industries/construction" },
               { icon: Phone, title: "Hospitality", desc: "AI concierge services for guest check-in, room service, entertainment, and local recommendations.", path: "/industries/hospitality" },
               { icon: Award, title: "Real Estate", desc: "Virtual agents that qualify leads, schedule property tours, and answer buyer questions.", path: "/industries/real-estate" },
               { icon: Zap, title: "Technology", desc: "AI-powered support agents for technical troubleshooting, onboarding, and product guidance.", path: "/industries/technology" },
