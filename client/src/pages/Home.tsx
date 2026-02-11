@@ -106,12 +106,19 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b-4 border-foreground">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-black tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-              Auto<span className="text-primary">mio</span>
+            <Link href="/">
+              <div className="text-2xl font-black tracking-tight cursor-pointer" style={{ fontFamily: 'var(--font-display)' }}>
+                Auto<span className="text-primary">mio</span>
+              </div>
+            </Link>
+            <div className="flex items-center gap-6">
+              <Link href="/about">
+                <span className="font-bold hover:text-primary cursor-pointer transition-colors">About</span>
+              </Link>
+              <Button asChild className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+                <a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer">Request Demo</a>
+              </Button>
             </div>
-            <Button asChild className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
-              <a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer">Request Demo</a>
-            </Button>
           </div>
         </div>
       </nav>
