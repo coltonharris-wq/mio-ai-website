@@ -1,5 +1,5 @@
 /**
- * Mio.ai Homepage
+ * Automio Homepage
  * Design Philosophy: Neo-Brutalism meets Tech Minimalism
  * - Bold typography with extreme weight contrasts (900 vs 400)
  * - High-contrast purple (#6B46C1) with black borders
@@ -30,7 +30,7 @@ export default function Home() {
 
   const testimonials = [
     {
-      quote: "Mio.ai's AI Receptionist has transformed our customer service. We're now handling 3x more inquiries without adding staff, and our customers love the instant responses.",
+      quote: "Automio's AI Receptionist has transformed our customer service. We're now handling 3x more inquiries without adding staff, and our customers love the instant responses.",
       author: "Sarah Chen",
       role: "VP of Operations",
       company: "TechFlow Solutions"
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-black tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-              Mio<span className="text-primary">.ai</span>
+              Auto<span className="text-primary">mio</span>
             </div>
             <Button className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
               Request Demo
@@ -129,7 +129,7 @@ export default function Home() {
       <section className="py-24 bg-secondary">
         <div className="container">
           <h2 className="text-4xl md:text-5xl font-black mb-16 text-center" style={{ fontFamily: 'var(--font-display)' }}>
-            Why choose Mio.ai?
+            Why choose Automio?
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card className="brutalist-border brutalist-shadow bg-background p-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
@@ -425,7 +425,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="text-2xl font-black mb-4" style={{ fontFamily: 'var(--font-display)' }}>
-                Mio<span className="text-primary">.ai</span>
+                Auto<span className="text-primary">mio</span>
               </div>
               <p className="text-muted-foreground text-sm">
                 Intelligent automation for ambitious businesses.
@@ -450,13 +450,13 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>Contact</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>hello@mio.ai</li>
+                <li>hello@automio.ai</li>
                 <li>1-800-MIO-AIXX</li>
               </ul>
             </div>
           </div>
           <div className="border-t-2 border-foreground/10 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2026 Mio.ai. All rights reserved.</p>
+            <p>&copy; 2026 Automio. All rights reserved.</p>
           </div>
         </div>
       </footer>
