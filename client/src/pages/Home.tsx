@@ -113,7 +113,7 @@ export default function Home() {
             </Link>
             <div className="flex items-center gap-6">
               <Link href="/about" onClick={() => window.scrollTo(0, 0)}>
-                <a className="font-bold hover:text-primary cursor-pointer transition-colors">About</a>
+                <span className="font-bold hover:text-primary cursor-pointer transition-colors">About</span>
               </Link>
               <Button asChild className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
                 <a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer">Request Demo</a>
