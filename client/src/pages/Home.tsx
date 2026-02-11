@@ -9,6 +9,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Link } from "wouter";
 import { 
   Phone, 
   Zap, 
@@ -437,27 +438,29 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Users, title: "Healthcare", desc: "AI agents support virtual check-ins, patient consultations, and medical record management." },
-              { icon: TrendingUp, title: "Finance", desc: "Secure AI agents help customers apply for accounts and loans, check balances, and detect fraud." },
-              { icon: Target, title: "Retail", desc: "AI-powered agents that help customers find products, process orders, and provide personalized recommendations." },
-              { icon: Phone, title: "Hospitality", desc: "AI concierge services for guest check-in, room service, entertainment, and local recommendations." },
-              { icon: Award, title: "Real Estate", desc: "Virtual agents that qualify leads, schedule property tours, and answer buyer questions." },
-              { icon: Zap, title: "Technology", desc: "AI-powered support agents for technical troubleshooting, onboarding, and product guidance." },
-              { icon: Clock, title: "Professional Services", desc: "Intelligent scheduling, client intake, and project management automation." },
-              { icon: MessageSquare, title: "E-commerce", desc: "24/7 customer support, order tracking, and personalized shopping assistance." }
+              { icon: Users, title: "Healthcare", desc: "AI agents support virtual check-ins, patient consultations, and medical record management.", path: "/industries/healthcare" },
+              { icon: TrendingUp, title: "Finance", desc: "Secure AI agents help customers apply for accounts and loans, check balances, and detect fraud.", path: "/industries/finance" },
+              { icon: Target, title: "Retail", desc: "AI-powered agents that help customers find products, process orders, and provide personalized recommendations.", path: "/industries/retail" },
+              { icon: Phone, title: "Hospitality", desc: "AI concierge services for guest check-in, room service, entertainment, and local recommendations.", path: "/industries/hospitality" },
+              { icon: Award, title: "Real Estate", desc: "Virtual agents that qualify leads, schedule property tours, and answer buyer questions.", path: "/industries/real-estate" },
+              { icon: Zap, title: "Technology", desc: "AI-powered support agents for technical troubleshooting, onboarding, and product guidance.", path: "/industries/technology" },
+              { icon: Clock, title: "Professional Services", desc: "Intelligent scheduling, client intake, and project management automation.", path: "/industries/professional-services" },
+              { icon: MessageSquare, title: "E-commerce", desc: "24/7 customer support, order tracking, and personalized shopping assistance.", path: "/industries/ecommerce" }
             ].map((industry, i) => (
-              <Card key={i} className="brutalist-border bg-background p-6 hover:brutalist-shadow transition-all hover:-translate-y-1">
-                <industry.icon className="w-10 h-10 text-primary mb-4" />
-                <h3 className="text-xl font-bold mb-3" style={{ fontFamily: 'var(--font-display)' }}>
-                  {industry.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  {industry.desc}
-                </p>
-                <Button variant="link" className="p-0 h-auto font-bold text-primary">
-                  Learn More <ArrowRight className="ml-1 w-4 h-4" />
-                </Button>
-              </Card>
+              <Link key={i} href={industry.path}>
+                <Card className="brutalist-border bg-background p-6 hover:brutalist-shadow transition-all hover:-translate-y-1 cursor-pointer group">
+                  <industry.icon className="w-10 h-10 text-primary mb-4" />
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+                    {industry.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    {industry.desc}
+                  </p>
+                  <div className="font-bold text-primary flex items-center">
+                    Learn More <ArrowRight className="ml-1 w-4 h-4" />
+                  </div>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

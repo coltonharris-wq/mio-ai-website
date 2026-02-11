@@ -16,6 +16,8 @@ import Ecommerce from "./pages/industries/Ecommerce";
 import Technology from "./pages/industries/Technology";
 import ProfessionalServices from "./pages/industries/ProfessionalServices";
 import Construction from "./pages/industries/Construction";
+import Retail from "./pages/industries/Retail";
+import Hospitality from "./pages/industries/Hospitality";
 
 
 function Router() {
@@ -33,6 +35,8 @@ function Router() {
       <Route path={"/industries/technology"} component={Technology} />
       <Route path={"/industries/professional-services"} component={ProfessionalServices} />
       <Route path={"/industries/construction"} component={Construction} />
+      <Route path={"/industries/retail"} component={Retail} />
+      <Route path={"/industries/hospitality"} component={Hospitality} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
