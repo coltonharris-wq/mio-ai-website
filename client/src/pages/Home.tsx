@@ -66,8 +66,8 @@ export default function Home() {
             <div className="text-2xl font-black tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
               Auto<span className="text-primary">mio</span>
             </div>
-            <Button className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
-              Request Demo
+            <Button asChild className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+              <a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer">Request Demo</a>
             </Button>
           </div>
         </div>
@@ -91,8 +91,8 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed" style={{ fontFamily: 'var(--font-body)', fontWeight: 400 }}>
               We deploy advanced AI agents to streamline your operations, engage your customers, and drive growth—delivering results <span className="font-bold text-primary bg-white px-2 py-1 rounded" style={{ fontFamily: 'var(--font-mono)' }}>400x faster</span> than traditional methods.
             </p>
-            <Button size="lg" className="brutalist-border brutalist-shadow-lg bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-8 py-6 transition-all hover:translate-x-2 hover:translate-y-2 hover:shadow-none">
-              Talk to an Expert <ArrowRight className="ml-2" />
+            <Button asChild size="lg" className="brutalist-border brutalist-shadow-lg bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-8 py-6 transition-all hover:translate-x-2 hover:translate-y-2 hover:shadow-none">
+              <a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">Talk to an Expert <ArrowRight className="ml-2" /></a>
             </Button>
           </div>
         </div>
@@ -175,8 +175,8 @@ export default function Home() {
             </Card>
           </div>
           <div className="text-center">
-            <Button className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
-              Connect With Us
+            <Button asChild className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+              <a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer">Connect With Us</a>
             </Button>
           </div>
         </div>
@@ -413,8 +413,8 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-10 text-background/80 max-w-3xl mx-auto">
             Join hundreds of leading brands leveraging AI to work smarter, faster, and more efficiently.
           </p>
-          <Button size="lg" className="brutalist-border brutalist-shadow-lg bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-10 py-7 transition-all hover:translate-x-2 hover:translate-y-2 hover:shadow-none">
-            Request a Demo <ArrowRight className="ml-2" />
+          <Button asChild size="lg" className="brutalist-border brutalist-shadow-lg bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-10 py-7 transition-all hover:translate-x-2 hover:translate-y-2 hover:shadow-none">
+            <a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">Request a Demo <ArrowRight className="ml-2" /></a>
           </Button>
         </div>
       </section>
