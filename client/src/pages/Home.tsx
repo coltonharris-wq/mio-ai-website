@@ -505,15 +505,15 @@ export default function Home() {
               <h4 className="font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>Company</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Careers</a></li>
+                <li><a href="mailto:mouse@automioapp.com" className="hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>Contact</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>hello@automio.ai</li>
-                <li>1-800-MIO-AIXX</li>
+              <ul className="space-y-2 text-muted-foreground">
+                <li><a href="mailto:mouse@automioapp.com" className="hover:text-primary transition-colors text-sm">mouse@automioapp.com</a></li>
+                <li><a href="tel:+19105158927" className="hover:text-primary transition-colors text-sm">(910) 515-8927</a></li>
               </ul>
             </div>
           </div>
