@@ -232,9 +232,14 @@ export default function AIReceptionist() {
               Auto<span className="text-primary">mio</span>
             </div>
           </Link>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-muted-foreground text-sm mb-4">
             &copy; 2026 Automio. All rights reserved.
           </p>
+          <div className="flex justify-center gap-4 font-bold text-sm">
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors underline">Privacy Policy</Link>
+            <span>|</span>
+            <Link href="/sms-terms" className="hover:text-primary transition-colors underline">SMS Terms</Link>
+          </div>
         </div>
       </footer>
     </div>

@@ -18,6 +18,8 @@ import Technology from "./pages/industries/Technology";
 import ProfessionalServices from "./pages/industries/ProfessionalServices";
 import Construction from "./pages/industries/Construction";
 import Hospitality from "./pages/industries/Hospitality";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import SMSTerms from "./pages/SMSTerms";
 
 
 function Router() {
@@ -37,6 +39,8 @@ function Router() {
       <Route path={"/industries/professional-services"} component={ProfessionalServices} />
       <Route path={"/industries/construction"} component={Construction} />
       <Route path={"/industries/hospitality"} component={Hospitality} />
+      <Route path={"/privacy-policy"} component={PrivacyPolicy} />
+      <Route path={"/sms-terms"} component={SMSTerms} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

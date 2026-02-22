@@ -192,212 +192,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Mio.ai Section */}
+      {/* Services Section */}
       <section className="py-24 bg-secondary">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-black mb-16 text-center" style={{ fontFamily: 'var(--font-display)' }}>
-            Why choose Automio?
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="brutalist-border brutalist-shadow bg-background p-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
-              <div className="border-l-4 border-primary pl-6">
-                <div className="text-6xl font-black mb-4 text-primary" style={{ fontFamily: 'var(--font-mono)' }}>
-                  400x
-                </div>
-                <h3 className="text-xl font-bold mb-3" style={{ fontFamily: 'var(--font-display)' }}>
-                  Faster Execution
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Our AI agents work 400 times faster than traditional methods, delivering measurable ROI and transforming your operations in days, not months.
-                </p>
-              </div>
-            </Card>
-
-            <Card className="brutalist-border brutalist-shadow bg-background p-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
-              <div className="border-l-4 border-primary pl-6">
-                <div className="text-6xl font-black mb-4 text-primary" style={{ fontFamily: 'var(--font-mono)' }}>
-                  100%
-                </div>
-                <h3 className="text-xl font-bold mb-3" style={{ fontFamily: 'var(--font-display)' }}>
-                  Customized Solutions
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Every AI agent is tailored to your unique business needs, integrating seamlessly with your existing systems and workflows.
-                </p>
-              </div>
-            </Card>
-
-            <Card className="brutalist-border brutalist-shadow bg-background p-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
-              <div className="border-l-4 border-primary pl-6">
-                <div className="text-6xl font-black mb-4 text-primary" style={{ fontFamily: 'var(--font-mono)' }}>
-                  24/7
-                </div>
-                <h3 className="text-xl font-bold mb-3" style={{ fontFamily: 'var(--font-display)' }}>
-                  Expert Support
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Our team of AI specialists provides round-the-clock support, ensuring your automation runs smoothly and delivers continuous value.
-                </p>
-              </div>
-            </Card>
+          <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+            <div className="max-w-2xl">
+              <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
+                Our AI Services
+              </h2>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                We build and deploy specialized AI agents that handle complex tasks with precision and speed.
+              </p>
+            </div>
+            <Link href="/about">
+              <Button variant="link" className="font-bold text-lg group">
+                View All Services <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
-          <div className="text-center">
-            <Button asChild className="brutalist-border brutalist-shadow bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
-              <a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer">Connect With Us</a>
-            </Button>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="brutalist-border brutalist-shadow bg-background p-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+              <Phone className="w-12 h-12 text-primary mb-6" />
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>AI Receptionist</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Never miss a call again. Our AI-powered virtual receptionist handles customer inquiries, schedules appointments, and provides 24/7 support.
+              </p>
+              <Link href="/ai-receptionist">
+                <Button variant="outline" className="brutalist-border font-bold w-full">Learn More</Button>
+              </Link>
+            </Card>
+
+            <Card className="brutalist-border brutalist-shadow bg-background p-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+              <Zap className="w-12 h-12 text-primary mb-6" />
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>AI Automation</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Automate repetitive workflows across your business. Our agents integrate with your existing tools to handle data entry, processing, and more.
+              </p>
+              <Link href="/ai-automation">
+                <Button variant="outline" className="brutalist-border font-bold w-full">Learn More</Button>
+              </Link>
+            </Card>
+
+            <Card className="brutalist-border brutalist-shadow bg-background p-8 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none">
+              <TrendingUp className="w-12 h-12 text-primary mb-6" />
+              <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>Lead Generation</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Guaranteed qualified leads delivered monthly at a fixed cost. No more unpredictable marketing spend—just consistent pipeline growth.
+              </p>
+              <Link href="/lead-generation">
+                <Button variant="outline" className="brutalist-border font-bold w-full">Learn More</Button>
+              </Link>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-24 bg-background">
+      {/* Testimonial Section */}
+      <section className="py-24 bg-background border-y-4 border-foreground">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl font-black mb-16 text-center" style={{ fontFamily: 'var(--font-display)' }}>
-            Our AI Services
-          </h2>
-          
-          <div className="space-y-16">
-            {/* AI Receptionist */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Phone className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-3xl font-black" style={{ fontFamily: 'var(--font-display)' }}>
-                    AI Receptionist
-                  </h3>
-                </div>
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  A sophisticated conversational AI that handles inbound calls, answers frequently asked questions, and schedules appointments—providing a seamless 24/7 experience for your customers.
-                </p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Handles unlimited concurrent calls</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Natural language understanding in 50+ languages</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Seamless calendar integration and appointment booking</span>
-                  </li>
-                </ul>
-                <Button asChild variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
-                  <a href="/ai-receptionist">Learn More <ArrowRight className="ml-2 w-4 h-4" /></a>
-                </Button>
-              </div>
-              <div className="order-1 md:order-2">
-                <img 
-                  src="https://private-us-east-1.manuscdn.com/sessionFile/qUVbvV04rK95xby9RBjxu6/sandbox/i7U83rsZX0DxE07z7xAcAZ-img-2_1770846511000_na1fn_YWktcmVjZXB0aW9uaXN0LXZpc3VhbA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVVWYnZWMDRySzk1eGJ5OVJCanh1Ni9zYW5kYm94L2k3VTgzcnNaWDBEeEUwN3o3eEFjQVotaW1nLTJfMTc3MDg0NjUxMTAwMF9uYTFmbl9ZV2t0Y21WalpYQjBhVzl1YVhOMExYWnBjM1ZoYkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=j2s~3QeHdv1m~ai9ktVINJtC9QraaondWQxSYbxy~~kOeZF4laOzznewUz81yBU~6DEcsOm59PkjYLsHxO4jLsg~KoLIHBG7PupvrBqUpBkoUBk87TlRyMof1pZF-3CKxev0Y2T9cBQ0uKkZd1BFS3xaIyw1wIEvbljNerU2R~iERMTPiBf9E9T~NczkrW07MVmLC-0ilLg72rrBY1xIxoZCdqt0zbtYbPhEvGd61RSZbaDgX60K9w3CVT7LAPSALnY~pj7mAoLG5QsOd~lucxHrtonRrAp1pNa~zvpJCPFIGnyvoN866xOz8yCqkiDR8wF07lZVbh5NSqXW6LDvzQ__"
-                  alt="AI Receptionist Visualization"
-                  className="brutalist-border brutalist-shadow-lg w-full rounded-lg"
-                />
-              </div>
-            </div>
-
-            {/* AI Automation Agents */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663348279439/RMxulttYyuuWQgJh.png"
-                  alt="AI Automation Agents Visualization"
-                  className="brutalist-border brutalist-shadow-lg w-full rounded-lg"
-                />
-              </div>
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Zap className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-3xl font-black" style={{ fontFamily: 'var(--font-display)' }}>
-                    Full-Stack AI Automation
-                  </h3>
-                </div>
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Custom-built AI agents that automate complex business processes—from data entry and analysis to customer support and IT service desk management. Designed to integrate with your existing systems and deliver significant ROI.
-                </p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Process automation across all departments</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Seamless integration with existing tools and platforms</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Continuous learning and optimization</span>
-                  </li>
-                </ul>
-                <Button asChild variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
-                  <a href="/ai-automation">Learn More <ArrowRight className="ml-2 w-4 h-4" /></a>
-                </Button>
-              </div>
-            </div>
-
-            {/* Lead Generation */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <TrendingUp className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-3xl font-black" style={{ fontFamily: 'var(--font-display)' }}>
-                    Guaranteed Lead Generation
-                  </h3>
-                </div>
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  A performance-based marketing service where we provide a guaranteed number of qualified leads to your business for a fixed monthly cost—leveraging our AI-powered marketing and analytics platform.
-                </p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Fixed monthly cost with guaranteed lead volume</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>AI-powered targeting and qualification</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Real-time analytics and performance tracking</span>
-                  </li>
-                </ul>
-                <Button asChild variant="outline" className="brutalist-border font-bold hover:bg-foreground hover:text-background transition-all">
-                  <a href="/lead-generation">Learn More <ArrowRight className="ml-2 w-4 h-4" /></a>
-                </Button>
-              </div>
-              <div className="order-1 md:order-2">
-                <img 
-                  src="https://private-us-east-1.manuscdn.com/sessionFile/qUVbvV04rK95xby9RBjxu6/sandbox/i7U83rsZX0DxE07z7xAcAZ-img-4_1770846525000_na1fn_bGVhZC1nZW5lcmF0aW9uLXZpc3VhbA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVVWYnZWMDRySzk1eGJ5OVJCanh1Ni9zYW5kYm94L2k3VTgzcnNaWDBEeEUwN3o3eEFjQVotaW1nLTRfMTc3MDg0NjUyNTAwMF9uYTFmbl9iR1ZoWkMxblpXNWxjbUYwYVc5dUxYWnBjM1ZoYkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=HAx5sUYralhW9efn~HOkPmUcGhbOMGsOBu4Wq4TGhagB~je4pZaEPCdUB-cf4G46jXlKqmJsBoR80WMEszJcnbZFlotK7q1HnKc-xsvq9TY1ft6EeI2pKdNISVTqI58B9gzgSwGJwvDGdABC93TVkNAxI~SS2FRz479nZU32MZJNpH7m4dsCaevMlaij-SVtxEnKa8NRd4fyqhETBzcUn13X1UjXw7sZNUFZcJ~m4c2Ey0Rh2rh8jdWq8HlelJB1pzYN5ZZU-BXde3wvE~3CgYm~91K019PbWyb~r4bXvqwEZwuVXJsuNfj27ouv-VqlX4V7YBWO-I-d3TxozaxPRA__"
-                  alt="Lead Generation Visualization"
-                  className="brutalist-border brutalist-shadow-lg w-full rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section 
-        className="py-24 relative overflow-hidden"
-        style={{
-          backgroundImage: `url('https://private-us-east-1.manuscdn.com/sessionFile/qUVbvV04rK95xby9RBjxu6/sandbox/i7U83rsZX0DxE07z7xAcAZ-img-5_1770846520000_na1fn_dGVzdGltb25pYWwtYmFja2dyb3VuZA.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcVVWYnZWMDRySzk1eGJ5OVJCanh1Ni9zYW5kYm94L2k3VTgzcnNaWDBEeEUwN3o3eEFjQVotaW1nLTVfMTc3MDg0NjUyMDAwMF9uYTFmbl9kR1Z6ZEdsdGIyNXBZV3d0WW1GamEyZHliM1Z1WkEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=SpgQdzlLpMk0BG7y6e-Iv4ayO2guOvD-40puI2IuI9jfn7mZX-SX08qd2OYbqeAuJBmHGGliTGW2gzSCUS~iuNkZtsiy0WBXdQRYiI2DJXoH9aNw9Dka5GI3Jpo9WVjrw04kE0vFHj6D-RhnMMLvdpAaeFDV-iQVVZzAU9mlPuRrgUfSZ3-XA3tvfG8EiTlkB6da1cbH89x6mGPBBTxH9ZeBEq12t6g~gtFHHQ89ly0ZB-juzFLnHVBVWWMEkRYvcXfvEZDiUbstMZMGNGDfsVFJDieF8VHPvSVhr97TE7g85XhxYkWeBgaHdPqwXjDwX2tTdN3aJvhNX6zgK2Xw__')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
-        <div className="absolute inset-0 bg-secondary/90"></div>
-        <div className="container relative z-10">
-          <h2 className="text-4xl md:text-5xl font-black mb-16 text-center" style={{ fontFamily: 'var(--font-display)' }}>
-            Our customers see value in every interaction
-          </h2>
-          
           <div className="max-w-4xl mx-auto">
             <Card className="brutalist-border brutalist-shadow-lg bg-primary text-primary-foreground p-12 relative">
               <MessageSquare className="w-12 h-12 mb-6 opacity-50" />
@@ -503,15 +356,15 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>Services</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">AI Receptionist</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">AI Automation</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Lead Generation</a></li>
+                <li><Link href="/ai-receptionist" className="hover:text-primary transition-colors">AI Receptionist</Link></li>
+                <li><Link href="/ai-automation" className="hover:text-primary transition-colors">AI Automation</Link></li>
+                <li><Link href="/lead-generation" className="hover:text-primary transition-colors">Lead Generation</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>Company</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
+                <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
                 <li><a href="https://calendly.com/harriscolton29/30min" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Careers</a></li>
                 <li><a href="mailto:mouse@automioapp.com" className="hover:text-primary transition-colors">Contact</a></li>
               </ul>
@@ -525,7 +378,14 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t-2 border-foreground/10 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2026 Automio. All rights reserved.</p>
+            <p className="mb-2">&copy; 2026 Automio. All rights reserved.</p>
+            <div className="flex justify-center gap-4 font-bold">
+              <Link href="/privacy-policy" className="hover:text-primary transition-colors underline">Privacy Policy</Link>
+              <span>|</span>
+              <Link href="/sms-terms" className="hover:text-primary transition-colors underline">SMS Terms</Link>
+              <span>|</span>
+              <span className="text-muted-foreground/50">Terms of Service</span>
+            </div>
           </div>
         </div>
       </footer>
